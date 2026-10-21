@@ -3,9 +3,15 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
+repositories {
+    google()
+    mavenCentral()
+}
+
 android {
     namespace 'com.ultraman.recomp'
     compileSdk 34
+    ndkVersion "26.1.10909125"
 
     defaultConfig {
         applicationId "com.ultraman.recomp"
